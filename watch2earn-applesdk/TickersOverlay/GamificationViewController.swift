@@ -373,7 +373,7 @@ public class GamificationViewController: UIViewController {
     }
     
     private func resolvePoll(_ id: Int64, amount: Int, correct: [Int]){
-        var wagered = GamificationViewController.wagerPoll;
+        let wagered = GamificationViewController.wagerPoll;
         var selectedPoll: Poll?
         if(wagered.isEmpty){
             return
@@ -438,7 +438,7 @@ public class GamificationViewController: UIViewController {
     @objc func wagerPoints(_ sender: UIButton) {
         print("Wager Button Pressed" )
         let wagerValue = wagerViewController.wager_value.text?.toInt64()
-        if var poll = sender.titleLabel?.additionalParameter {
+        if let poll = sender.titleLabel?.additionalParameter {
             print("Wagered poll: ", poll)
             W2EManager.w2eSdk.gamifySocketAnswerMessage(pollID: poll.id, selectedAns: poll.selected!, wagerValue: Int(wagerValue!))
             startPollTimer()
@@ -452,26 +452,13 @@ public class GamificationViewController: UIViewController {
     @objc func updatingOverlay() {
         
                let stakingData = W2EManager.w2eSdk.getStakingData();
-               let socketData = W2EManager.w2eSdk.getW2EDataStore();
                let ticker = W2EManager.w2eSdk.getAllTickers();
                
         let eatBalance = stakingData.balance
-        var price = "0.00"
         var usdBalance = "0.00"
-        var change24h = "0.00"
     
     if ticker.price > 0.0 {
         usdBalance = "$"+(eatBalance*ticker.price).delimiter
-            price = String(format:"$%.4f",ticker.price)
-            
-            
-            if ticker.change24h < 0.0{
-                change24h = String(format:"-%.2f",ticker.change24h);
-                W2EManager.overlay.priceChange.textColor = UIColor.red
-            }else{
-                change24h = String(format:"+%.2f",ticker.change24h);
-                W2EManager.overlay.priceChange.textColor = UIColor.green
-            }
          }
     totalBalance.text = usdBalance
 //        W2EManager.overlay.points.text = points.delimiter

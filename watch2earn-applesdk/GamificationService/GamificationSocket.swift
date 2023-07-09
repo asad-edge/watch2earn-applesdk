@@ -138,7 +138,6 @@ open class GamificationSocket : NSObject, URLSessionWebSocketDelegate {
 //                            GamificationSocket.newPolls.removeAll(where: {$0.id == pol.id && $0.mode == pol.mode})
                             GamificationSocket.newPolls.removeAll()
                             GamificationSocket.newPolls.append(pol)
-                            let choices = parseObj!["choices"] as! [String]
                             
                         }
                     }

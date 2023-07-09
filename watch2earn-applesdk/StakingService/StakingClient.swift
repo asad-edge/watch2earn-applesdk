@@ -43,15 +43,15 @@ class StakingClient: NSObject {
                 let stakedAmount = stakedPercentage * self.Lerp(val1: StakingClient.oldData!.balance, val2: StakingClient.currentData!.balance, f: lerpFactor);
                 let estimate = stakedPercentage * self.Lerp(val1: StakingClient.oldData!.estimate, val2: StakingClient.currentData!.estimate, f: lerpFactor);
 //                print("estimate time, ",estimate)
-                var estApyHigh = 0.0;
-                var estApyLow = 0.0;
-                var estApy = 0.0;
-                if(stakedAmount > 0)
-                {
-                    estApyHigh = (estimate * 365) / stakedAmount;
-                    estApyLow = (estimate * 42.33334366) / stakedAmount;
-                    estApy = (estApyHigh - estApyLow)/2
-                }
+//                var estApyHigh = 0.0;
+//                var estApyLow = 0.0;
+//                var estApy = 0.0;
+//                if(stakedAmount > 0)
+//                {
+//                    estApyHigh = (estimate * 365) / stakedAmount;
+//                    estApyLow = (estimate * 42.33334366) / stakedAmount;
+//                    estApy = (estApyHigh - estApyLow)/2
+//                }
                 let hoursUntilStaking = self.Lerp(val1: StakingClient.oldData!.hoursUntilStaking, val2: StakingClient.currentData!.hoursUntilStaking, f: lerpFactor);
 //                print("estApyHigh time, ",estApyHigh)
                 StakingClient.stakeStore.estimate = estimate/24

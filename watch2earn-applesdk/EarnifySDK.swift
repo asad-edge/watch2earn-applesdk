@@ -96,15 +96,14 @@ public class EarnifySDK {
         if(!W2EManager.optW2e){
             W2EManager.w2eSdk.startStaking()
             // Filter the array based on the channel name
-            let filteredArray = W2EManager.channelWallets?.filter { ($0.channelName as? String) == channelName }
+            let filteredArray = W2EManager.channelWallets?.filter { ($0.channelName) == channelName }
 
             // Check if the filtered array is not empty
             if let firstResult = filteredArray?.first {
-                if let channelAddress = firstResult.channelAddress as? String {
+//                        let channelAddress = firstResult.channelAddress
                         W2EManager.w2eSdk.sendRateData(type: "rate", value: 600)
 //                      W2EManager.w2eSdk.sendChannelData(type: "channel", value: channelAddress)
-                }
-                if let isGamified = firstResult.isGamified as? Bool {
+                    let isGamified = firstResult.isGamified
                     gamifiedChannel = isGamified
                     if isGamified {
                         print("is_gamified true: \(isGamified)")
@@ -162,9 +161,6 @@ public class EarnifySDK {
                   
                     observePlayerSeeking(player: avPlayer!)
                     
-                } else {
-                    print("is_gamified value not found")
-                }
             } else {
                 print("Channel name not found in the array")
             }
@@ -352,7 +348,7 @@ public class EarnifySDK {
             if W2EManager.overlay.qr_code.isHidden {
             W2EManager.overlay.gamificationView.isHidden = false
             W2EManager.overlay.qr_code.isHidden = false
-                UIView.animate(withDuration: 2, animations: { [self] in
+                UIView.animate(withDuration: 2, animations: { [] in
                     W2EManager.overlay.qr_code.alpha = 1.0
                 })
                 {_ in
@@ -362,7 +358,7 @@ public class EarnifySDK {
             if self.isPlaying && !W2EManager.overlay.qr_code.isHidden {
                     Timer.scheduledTimer(withTimeInterval: 6.0, repeats: false){_ in
                         if self.isPlaying {
-                            UIView.animate(withDuration: 2, animations: { [self] in
+                            UIView.animate(withDuration: 2, animations: { [] in
                                 W2EManager.overlay.qr_code.alpha = 0.0
                             })
                             {_ in
@@ -441,15 +437,6 @@ public class EarnifySDK {
                             toOriginY newOriginY: CGFloat,
                             duration: TimeInterval)
     {
-        let oldFrame = w2ebar.frame
-        let newFrame = CGRect(x: newOriginX, y: newOriginY, width: oldFrame.width, height: oldFrame.height)
-
-        let translation = CGAffineTransform(translationX: newFrame.midX - oldFrame.midX,
-                                            y: newFrame.midY - oldFrame.midY)
-        let scaling = CGAffineTransform(scaleX: newFrame.width / oldFrame.width,
-                                        y: newFrame.height / oldFrame.height)
-
-        let transform = translation.concatenating(scaling)
 
         UIView.animate(withDuration: duration, animations: { [self] in
             //w2ebar.transform = transform
@@ -479,16 +466,6 @@ public class EarnifySDK {
                             toOriginY newOriginY: CGFloat,
                             duration: TimeInterval)
     {
-        let oldFrame = gamify.frame
-        let newFrame = CGRect(x: newOriginX, y: newOriginY, width: oldFrame.width, height: oldFrame.height)
-
-        let translation = CGAffineTransform(translationX: newFrame.midX - oldFrame.midX,
-                                            y: newFrame.midY - oldFrame.midY)
-        let scaling = CGAffineTransform(scaleX: newFrame.width / oldFrame.width,
-                                        y: newFrame.height / oldFrame.height)
-
-        let transform = translation.concatenating(scaling)
-
         UIView.animate(withDuration: duration, animations: { [self] in
             //w2ebar.transform = transform
             if(newOriginY >= 0){
@@ -502,7 +479,7 @@ public class EarnifySDK {
 //            w2ebar.transform = .identity
 //            w2ebar.frame = newFrame
             if(newOriginY >= 0){
-                if let presentingVC = gamificationViewController?.presentingViewController {
+                if let _ = gamificationViewController?.presentingViewController {
                     print("gamify already presented")
                     }
                 else {
@@ -517,7 +494,7 @@ public class EarnifySDK {
                 }
             }else{
                 if isPlaying && !W2EManager.optW2e && W2EManager.hideGamifyBar && !isGameReceived {
-                    if let presentedVC = gamificationViewController?.presentingViewController {
+                    if let _ = gamificationViewController?.presentingViewController {
                         print("gamify already presented 2")
                         DispatchQueue.main.async {
                             self.gamificationViewController.view.isHidden = true
@@ -672,7 +649,6 @@ public func addPeriodicTimeObserver() {
     @objc func updatingOverlay() {
                let stakingData = W2EManager.w2eSdk.getStakingData();
                let socketData = W2EManager.w2eSdk.getW2EDataStore();
-               let ticker = W2EManager.w2eSdk.getAllTickers();
                
                let earning = socketData.earning
                let diffEarning = earning - earningPre;

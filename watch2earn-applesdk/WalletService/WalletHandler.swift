@@ -109,7 +109,7 @@ class WalletHandler {
                 let jsonData = json as AnyObject
                 let keys = jsonData.allKeys;
                 if(keys?.first as! String == "error"){
-                    print(jsonData["error"] as? String?)
+                    print(jsonData["error"] as? String? as Any)
                     
                 }else{
                     if WalletHandler.currentWallet.private != "" {

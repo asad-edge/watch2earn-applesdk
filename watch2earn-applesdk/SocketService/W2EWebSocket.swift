@@ -48,7 +48,6 @@ class W2EWebSocket: NSObject, URLSessionWebSocketDelegate {
                 self.apiKey = apiKey
                 self.retryCount = 0
                 self.close()
-        let currentWallet = walletHandler.getCurrentWallet().public
         session = URLSession(configuration: .default, delegate: self, delegateQueue: nil)
         W2EWebSocket.webSocketTask = session.webSocketTask(with: URL(string: "wss://faices-api.edgevideo.com/")!)
         W2EWebSocket.webSocketTask?.resume()
