@@ -37,7 +37,7 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = "none"
+  # spec.license      = "none"
   # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -88,11 +88,11 @@ Pod::Spec.new do |spec|
   #  For header files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
   #
+   spec.swift_versions = "5.0"
+   spec.source_files  = "watch2earn-applesdk/**/*.swift"
+  # spec.exclude_files = "Classes/Exclude"
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
-
-  # spec.public_header_files = "Classes/**/*.h"
+    spec.public_header_files = "watch2earn-applesdk/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -105,9 +105,9 @@ Pod::Spec.new do |spec|
 
   # spec.resource  = "icon.png"
    spec.resources = [
-    "Resources/mediaFiles/*.png",
-    "Resources/audioFiles/*.mp3",
-    "Resources/customFonts/*.otf"
+    "watch2earn-applesdk/Resources/mediaFiles/*.png",
+    "watch2earn-applesdk/Resources/audioFiles/*.mp3",
+    "watch2earn-applesdk/Resources/customFonts/*.otf"
   ]
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
