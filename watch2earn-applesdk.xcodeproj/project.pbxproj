@@ -1,0 +1,882 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		28317D4429C2ECC4006D33B2 /* watch2earn-universal */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 28317D4529C2ECC4006D33B2 /* Build configuration list for PBXAggregateTarget "watch2earn-universal" */;
+			buildPhases = (
+				28317D4829C2ECCA006D33B2 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "watch2earn-universal";
+			productName = "watch2earn-universal";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		282B08652A027E4C001E0CB4 /* GamificationSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282B08642A027E4C001E0CB4 /* GamificationSocket.swift */; };
+		284EE9D92A123279006B7B15 /* PollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284EE9D72A123279006B7B15 /* PollViewController.swift */; };
+		284EE9DA2A123279006B7B15 /* PollViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 284EE9D82A123279006B7B15 /* PollViewController.xib */; };
+		284EEAD52A1360F9006B7B15 /* WagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284EEAD32A1360F9006B7B15 /* WagerViewController.swift */; };
+		284EEAD62A1360F9006B7B15 /* WagerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 284EEAD42A1360F9006B7B15 /* WagerViewController.xib */; };
+		284EEB0D2A137DC0006B7B15 /* ResolveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284EEB0B2A137DC0006B7B15 /* ResolveViewController.swift */; };
+		284EEB0E2A137DC0006B7B15 /* ResolveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 284EEB0C2A137DC0006B7B15 /* ResolveViewController.xib */; };
+		284EEBEE2A1BAC58006B7B15 /* data-reveal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 284EEBEC2A1BAC58006B7B15 /* data-reveal.mp3 */; };
+		284EEBEF2A1BAC58006B7B15 /* success.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 284EEBED2A1BAC58006B7B15 /* success.mp3 */; };
+		2860425A2A56DD4800BCD015 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286042592A56DD4800BCD015 /* Reachability.swift */; };
+		288CA3102A0948F500EED345 /* GamificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288CA30E2A0948F500EED345 /* GamificationViewController.swift */; };
+		288CA3212A09695E00EED345 /* GamificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 288CA3202A09695E00EED345 /* GamificationViewController.xib */; };
+		28C9F2DF2A261B2100C03068 /* side_ad_banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 28C9F2DE2A261B2100C03068 /* side_ad_banner.png */; };
+		28D18125299A0E3B00FE0FAA /* watch2earn_applesdk.docc in Sources */ = {isa = PBXBuildFile; fileRef = 28D18124299A0E3B00FE0FAA /* watch2earn_applesdk.docc */; };
+		28D1812B299A0E3B00FE0FAA /* watch2earn_applesdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D18120299A0E3B00FE0FAA /* watch2earn_applesdk.framework */; };
+		28D18130299A0E3B00FE0FAA /* watch2earn_applesdkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D1812F299A0E3B00FE0FAA /* watch2earn_applesdkTests.swift */; };
+		28D18131299A0E3B00FE0FAA /* watch2earn_applesdk.h in Headers */ = {isa = PBXBuildFile; fileRef = 28D18123299A0E3B00FE0FAA /* watch2earn_applesdk.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28D18154299A143B00FE0FAA /* RemoteSocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D1813D299A143900FE0FAA /* RemoteSocketService.swift */; };
+		28D18155299A143B00FE0FAA /* QRcodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D1813E299A143900FE0FAA /* QRcodeGenerator.swift */; };
+		28D18156299A143B00FE0FAA /* RemoteMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D1813F299A143A00FE0FAA /* RemoteMessages.swift */; };
+		28D18157299A143B00FE0FAA /* W2EWebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D18141299A143A00FE0FAA /* W2EWebSocket.swift */; };
+		28D18158299A143B00FE0FAA /* W2EDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D18142299A143A00FE0FAA /* W2EDataStore.swift */; };
+		28D18159299A143B00FE0FAA /* WalletHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D18144299A143A00FE0FAA /* WalletHandler.swift */; };
+		28D1815A299A143B00FE0FAA /* EarnifySDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D18145299A143A00FE0FAA /* EarnifySDK.swift */; };
+		28D1815B299A143B00FE0FAA /* CacheStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D18147299A143A00FE0FAA /* CacheStorage.swift */; };
+		28D1815C299A143B00FE0FAA /* ChannelHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D18149299A143A00FE0FAA /* ChannelHandler.swift */; };
+		28D1815D299A143B00FE0FAA /* MessagesHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D1814B299A143A00FE0FAA /* MessagesHandler.swift */; };
+		28D1815E299A143B00FE0FAA /* TickersClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D1814D299A143A00FE0FAA /* TickersClient.swift */; };
+		28D1815F299A143B00FE0FAA /* PlayerOverlayViews.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28D1814F299A143A00FE0FAA /* PlayerOverlayViews.xib */; };
+		28D18160299A143B00FE0FAA /* PlayerOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D18150299A143A00FE0FAA /* PlayerOverlayView.swift */; };
+		28D18161299A143B00FE0FAA /* StakingDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D18152299A143B00FE0FAA /* StakingDataStore.swift */; };
+		28D18162299A143B00FE0FAA /* StakingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D18153299A143B00FE0FAA /* StakingClient.swift */; };
+		28D18178299A15A200FE0FAA /* ProximaNova-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 28D18165299A15A100FE0FAA /* ProximaNova-Thin.otf */; };
+		28D18179299A15A200FE0FAA /* ProximaNova-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 28D18166299A15A100FE0FAA /* ProximaNova-Bold.otf */; };
+		28D1817A299A15A200FE0FAA /* ProximaNova-Extrabold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 28D18167299A15A100FE0FAA /* ProximaNova-Extrabold.otf */; };
+		28D1817B299A15A200FE0FAA /* ProximaNova-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 28D18168299A15A100FE0FAA /* ProximaNova-Regular.otf */; };
+		28D1817C299A15A200FE0FAA /* eatAnimated.gif in Resources */ = {isa = PBXBuildFile; fileRef = 28D1816A299A15A100FE0FAA /* eatAnimated.gif */; };
+		28D1817E299A15A200FE0FAA /* earnify.png in Resources */ = {isa = PBXBuildFile; fileRef = 28D1816C299A15A100FE0FAA /* earnify.png */; };
+		28D18185299A15A200FE0FAA /* eat.png in Resources */ = {isa = PBXBuildFile; fileRef = 28D18173299A15A100FE0FAA /* eat.png */; };
+		28D18188299A15A200FE0FAA /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 28D18176299A15A100FE0FAA /* image.png */; };
+		28D1818B299A162500FE0FAA /* logo_big.png in Resources */ = {isa = PBXBuildFile; fileRef = 28D1818A299A162500FE0FAA /* logo_big.png */; };
+		28D181A4299A43BA00FE0FAA /* SettingsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28D181A2299A43BA00FE0FAA /* SettingsViewController.storyboard */; };
+		28D181A5299A43BA00FE0FAA /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D181A3299A43BA00FE0FAA /* SettingsViewController.swift */; };
+		28D181B2299A470800FE0FAA /* PopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28D181AE299A470800FE0FAA /* PopupViewController.xib */; };
+		28D181B3299A470800FE0FAA /* PopupPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D181AF299A470800FE0FAA /* PopupPlayerView.swift */; };
+		28D181B4299A470800FE0FAA /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D181B0299A470800FE0FAA /* PopupViewController.swift */; };
+		28D181B5299A470800FE0FAA /* SkipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D181B1299A470800FE0FAA /* SkipViewController.swift */; };
+		28D181B7299A481800FE0FAA /* W2EManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D181B6299A481800FE0FAA /* W2EManager.swift */; };
+		28D181E1299B60BA00FE0FAA /* GifHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D181E0299B60BA00FE0FAA /* GifHandler.swift */; };
+		28EB36762A1BF8DC004CAE18 /* AnimateFigures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EB36752A1BF8DC004CAE18 /* AnimateFigures.swift */; };
+		28EB392C2A1E23E3004CAE18 /* loose_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28EB392B2A1E23E3004CAE18 /* loose_sound.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		28D1812C299A0E3B00FE0FAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28D18117299A0E3B00FE0FAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28D1811F299A0E3B00FE0FAA;
+			remoteInfo = "watch2earn-applesdk";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		282B08642A027E4C001E0CB4 /* GamificationSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamificationSocket.swift; sourceTree = "<group>"; };
+		284EE9D72A123279006B7B15 /* PollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollViewController.swift; sourceTree = "<group>"; };
+		284EE9D82A123279006B7B15 /* PollViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PollViewController.xib; sourceTree = "<group>"; };
+		284EEAD32A1360F9006B7B15 /* WagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WagerViewController.swift; sourceTree = "<group>"; };
+		284EEAD42A1360F9006B7B15 /* WagerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WagerViewController.xib; sourceTree = "<group>"; };
+		284EEB0B2A137DC0006B7B15 /* ResolveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResolveViewController.swift; sourceTree = "<group>"; };
+		284EEB0C2A137DC0006B7B15 /* ResolveViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResolveViewController.xib; sourceTree = "<group>"; };
+		284EEBEC2A1BAC58006B7B15 /* data-reveal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "data-reveal.mp3"; sourceTree = "<group>"; };
+		284EEBED2A1BAC58006B7B15 /* success.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = success.mp3; sourceTree = "<group>"; };
+		286042592A56DD4800BCD015 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		288CA30E2A0948F500EED345 /* GamificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamificationViewController.swift; sourceTree = "<group>"; };
+		288CA3202A09695E00EED345 /* GamificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GamificationViewController.xib; sourceTree = "<group>"; };
+		28C9F2DE2A261B2100C03068 /* side_ad_banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = side_ad_banner.png; sourceTree = "<group>"; };
+		28D18120299A0E3B00FE0FAA /* watch2earn_applesdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = watch2earn_applesdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28D18123299A0E3B00FE0FAA /* watch2earn_applesdk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = watch2earn_applesdk.h; sourceTree = "<group>"; };
+		28D18124299A0E3B00FE0FAA /* watch2earn_applesdk.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = watch2earn_applesdk.docc; sourceTree = "<group>"; };
+		28D1812A299A0E3B00FE0FAA /* watch2earn-applesdkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "watch2earn-applesdkTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		28D1812F299A0E3B00FE0FAA /* watch2earn_applesdkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watch2earn_applesdkTests.swift; sourceTree = "<group>"; };
+		28D1813D299A143900FE0FAA /* RemoteSocketService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteSocketService.swift; sourceTree = "<group>"; };
+		28D1813E299A143900FE0FAA /* QRcodeGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRcodeGenerator.swift; sourceTree = "<group>"; };
+		28D1813F299A143A00FE0FAA /* RemoteMessages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteMessages.swift; sourceTree = "<group>"; };
+		28D18141299A143A00FE0FAA /* W2EWebSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = W2EWebSocket.swift; sourceTree = "<group>"; };
+		28D18142299A143A00FE0FAA /* W2EDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = W2EDataStore.swift; sourceTree = "<group>"; };
+		28D18144299A143A00FE0FAA /* WalletHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletHandler.swift; sourceTree = "<group>"; };
+		28D18145299A143A00FE0FAA /* EarnifySDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EarnifySDK.swift; sourceTree = "<group>"; };
+		28D18147299A143A00FE0FAA /* CacheStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheStorage.swift; sourceTree = "<group>"; };
+		28D18149299A143A00FE0FAA /* ChannelHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelHandler.swift; sourceTree = "<group>"; };
+		28D1814B299A143A00FE0FAA /* MessagesHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesHandler.swift; sourceTree = "<group>"; };
+		28D1814D299A143A00FE0FAA /* TickersClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TickersClient.swift; sourceTree = "<group>"; };
+		28D1814F299A143A00FE0FAA /* PlayerOverlayViews.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerOverlayViews.xib; sourceTree = "<group>"; };
+		28D18150299A143A00FE0FAA /* PlayerOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerOverlayView.swift; sourceTree = "<group>"; };
+		28D18152299A143B00FE0FAA /* StakingDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StakingDataStore.swift; sourceTree = "<group>"; };
+		28D18153299A143B00FE0FAA /* StakingClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StakingClient.swift; sourceTree = "<group>"; };
+		28D18165299A15A100FE0FAA /* ProximaNova-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Thin.otf"; sourceTree = "<group>"; };
+		28D18166299A15A100FE0FAA /* ProximaNova-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Bold.otf"; sourceTree = "<group>"; };
+		28D18167299A15A100FE0FAA /* ProximaNova-Extrabold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Extrabold.otf"; sourceTree = "<group>"; };
+		28D18168299A15A100FE0FAA /* ProximaNova-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Regular.otf"; sourceTree = "<group>"; };
+		28D1816A299A15A100FE0FAA /* eatAnimated.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = eatAnimated.gif; sourceTree = "<group>"; };
+		28D1816C299A15A100FE0FAA /* earnify.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = earnify.png; sourceTree = "<group>"; };
+		28D18173299A15A100FE0FAA /* eat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eat.png; sourceTree = "<group>"; };
+		28D18176299A15A100FE0FAA /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
+		28D1818A299A162500FE0FAA /* logo_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_big.png; sourceTree = "<group>"; };
+		28D181A2299A43BA00FE0FAA /* SettingsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SettingsViewController.storyboard; sourceTree = "<group>"; };
+		28D181A3299A43BA00FE0FAA /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		28D181AE299A470800FE0FAA /* PopupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopupViewController.xib; sourceTree = "<group>"; };
+		28D181AF299A470800FE0FAA /* PopupPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupPlayerView.swift; sourceTree = "<group>"; };
+		28D181B0299A470800FE0FAA /* PopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
+		28D181B1299A470800FE0FAA /* SkipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkipViewController.swift; sourceTree = "<group>"; };
+		28D181B6299A481800FE0FAA /* W2EManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = W2EManager.swift; sourceTree = "<group>"; };
+		28D181E0299B60BA00FE0FAA /* GifHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifHandler.swift; sourceTree = "<group>"; };
+		28EB36752A1BF8DC004CAE18 /* AnimateFigures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimateFigures.swift; sourceTree = "<group>"; };
+		28EB392B2A1E23E3004CAE18 /* loose_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = loose_sound.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28D1811D299A0E3B00FE0FAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28D18127299A0E3B00FE0FAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28D1812B299A0E3B00FE0FAA /* watch2earn_applesdk.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		282B08632A027D59001E0CB4 /* GamificationService */ = {
+			isa = PBXGroup;
+			children = (
+				282B08642A027E4C001E0CB4 /* GamificationSocket.swift */,
+			);
+			path = GamificationService;
+			sourceTree = "<group>";
+		};
+		284EEBEB2A1BAC3D006B7B15 /* audioFiles */ = {
+			isa = PBXGroup;
+			children = (
+				28EB392B2A1E23E3004CAE18 /* loose_sound.mp3 */,
+				284EEBEC2A1BAC58006B7B15 /* data-reveal.mp3 */,
+				284EEBED2A1BAC58006B7B15 /* success.mp3 */,
+			);
+			path = audioFiles;
+			sourceTree = "<group>";
+		};
+		286042582A56DCED00BCD015 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				286042592A56DD4800BCD015 /* Reachability.swift */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		28D18116299A0E3B00FE0FAA = {
+			isa = PBXGroup;
+			children = (
+				28D18122299A0E3B00FE0FAA /* watch2earn-applesdk */,
+				28D1812E299A0E3B00FE0FAA /* watch2earn-applesdkTests */,
+				28D18121299A0E3B00FE0FAA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		28D18121299A0E3B00FE0FAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28D18120299A0E3B00FE0FAA /* watch2earn_applesdk.framework */,
+				28D1812A299A0E3B00FE0FAA /* watch2earn-applesdkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28D18122299A0E3B00FE0FAA /* watch2earn-applesdk */ = {
+			isa = PBXGroup;
+			children = (
+				286042582A56DCED00BCD015 /* Reachability */,
+				282B08632A027D59001E0CB4 /* GamificationService */,
+				28D181DF299B608100FE0FAA /* GifHandler */,
+				28D181B6299A481800FE0FAA /* W2EManager.swift */,
+				28D181AD299A470800FE0FAA /* VideoPopup */,
+				28D181A1299A43BA00FE0FAA /* Settings */,
+				28D18163299A15A100FE0FAA /* Resources */,
+				28D18146299A143A00FE0FAA /* CacheStorage */,
+				28D18145299A143A00FE0FAA /* EarnifySDK.swift */,
+				28D18148299A143A00FE0FAA /* ChannelWalletHandler */,
+				28D1814A299A143A00FE0FAA /* MessagesHandler */,
+				28D1813C299A143900FE0FAA /* RemoteService */,
+				28D18140299A143A00FE0FAA /* SocketService */,
+				28D18151299A143B00FE0FAA /* StakingService */,
+				28D1814C299A143A00FE0FAA /* TickerService */,
+				28D1814E299A143A00FE0FAA /* TickersOverlay */,
+				28D18143299A143A00FE0FAA /* WalletService */,
+				28D18123299A0E3B00FE0FAA /* watch2earn_applesdk.h */,
+				28D18124299A0E3B00FE0FAA /* watch2earn_applesdk.docc */,
+			);
+			path = "watch2earn-applesdk";
+			sourceTree = "<group>";
+		};
+		28D1812E299A0E3B00FE0FAA /* watch2earn-applesdkTests */ = {
+			isa = PBXGroup;
+			children = (
+				28D1812F299A0E3B00FE0FAA /* watch2earn_applesdkTests.swift */,
+			);
+			path = "watch2earn-applesdkTests";
+			sourceTree = "<group>";
+		};
+		28D1813C299A143900FE0FAA /* RemoteService */ = {
+			isa = PBXGroup;
+			children = (
+				28D1813D299A143900FE0FAA /* RemoteSocketService.swift */,
+				28D1813E299A143900FE0FAA /* QRcodeGenerator.swift */,
+				28D1813F299A143A00FE0FAA /* RemoteMessages.swift */,
+			);
+			path = RemoteService;
+			sourceTree = "<group>";
+		};
+		28D18140299A143A00FE0FAA /* SocketService */ = {
+			isa = PBXGroup;
+			children = (
+				28D18141299A143A00FE0FAA /* W2EWebSocket.swift */,
+				28D18142299A143A00FE0FAA /* W2EDataStore.swift */,
+			);
+			path = SocketService;
+			sourceTree = "<group>";
+		};
+		28D18143299A143A00FE0FAA /* WalletService */ = {
+			isa = PBXGroup;
+			children = (
+				28D18144299A143A00FE0FAA /* WalletHandler.swift */,
+			);
+			path = WalletService;
+			sourceTree = "<group>";
+		};
+		28D18146299A143A00FE0FAA /* CacheStorage */ = {
+			isa = PBXGroup;
+			children = (
+				28D18147299A143A00FE0FAA /* CacheStorage.swift */,
+			);
+			path = CacheStorage;
+			sourceTree = "<group>";
+		};
+		28D18148299A143A00FE0FAA /* ChannelWalletHandler */ = {
+			isa = PBXGroup;
+			children = (
+				28D18149299A143A00FE0FAA /* ChannelHandler.swift */,
+			);
+			path = ChannelWalletHandler;
+			sourceTree = "<group>";
+		};
+		28D1814A299A143A00FE0FAA /* MessagesHandler */ = {
+			isa = PBXGroup;
+			children = (
+				28D1814B299A143A00FE0FAA /* MessagesHandler.swift */,
+			);
+			path = MessagesHandler;
+			sourceTree = "<group>";
+		};
+		28D1814C299A143A00FE0FAA /* TickerService */ = {
+			isa = PBXGroup;
+			children = (
+				28D1814D299A143A00FE0FAA /* TickersClient.swift */,
+			);
+			path = TickerService;
+			sourceTree = "<group>";
+		};
+		28D1814E299A143A00FE0FAA /* TickersOverlay */ = {
+			isa = PBXGroup;
+			children = (
+				28D1814F299A143A00FE0FAA /* PlayerOverlayViews.xib */,
+				28D18150299A143A00FE0FAA /* PlayerOverlayView.swift */,
+				288CA30E2A0948F500EED345 /* GamificationViewController.swift */,
+				288CA3202A09695E00EED345 /* GamificationViewController.xib */,
+				284EE9D72A123279006B7B15 /* PollViewController.swift */,
+				284EEAD32A1360F9006B7B15 /* WagerViewController.swift */,
+				284EEAD42A1360F9006B7B15 /* WagerViewController.xib */,
+				284EE9D82A123279006B7B15 /* PollViewController.xib */,
+				284EEB0B2A137DC0006B7B15 /* ResolveViewController.swift */,
+				284EEB0C2A137DC0006B7B15 /* ResolveViewController.xib */,
+			);
+			path = TickersOverlay;
+			sourceTree = "<group>";
+		};
+		28D18151299A143B00FE0FAA /* StakingService */ = {
+			isa = PBXGroup;
+			children = (
+				28D18152299A143B00FE0FAA /* StakingDataStore.swift */,
+				28D18153299A143B00FE0FAA /* StakingClient.swift */,
+			);
+			path = StakingService;
+			sourceTree = "<group>";
+		};
+		28D18163299A15A100FE0FAA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				284EEBEB2A1BAC3D006B7B15 /* audioFiles */,
+				28D18164299A15A100FE0FAA /* customFonts */,
+				28D18169299A15A100FE0FAA /* mediaFiles */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		28D18164299A15A100FE0FAA /* customFonts */ = {
+			isa = PBXGroup;
+			children = (
+				28D18165299A15A100FE0FAA /* ProximaNova-Thin.otf */,
+				28D18166299A15A100FE0FAA /* ProximaNova-Bold.otf */,
+				28D18167299A15A100FE0FAA /* ProximaNova-Extrabold.otf */,
+				28D18168299A15A100FE0FAA /* ProximaNova-Regular.otf */,
+			);
+			name = customFonts;
+			path = "watch2earn-applesdk/Resources/customFonts";
+			sourceTree = SOURCE_ROOT;
+		};
+		28D18169299A15A100FE0FAA /* mediaFiles */ = {
+			isa = PBXGroup;
+			children = (
+				28C9F2DE2A261B2100C03068 /* side_ad_banner.png */,
+				28D1818A299A162500FE0FAA /* logo_big.png */,
+				28D1816A299A15A100FE0FAA /* eatAnimated.gif */,
+				28D1816C299A15A100FE0FAA /* earnify.png */,
+				28D18173299A15A100FE0FAA /* eat.png */,
+				28D18176299A15A100FE0FAA /* image.png */,
+			);
+			name = mediaFiles;
+			path = "watch2earn-applesdk/Resources/mediaFiles";
+			sourceTree = SOURCE_ROOT;
+		};
+		28D181A1299A43BA00FE0FAA /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				28D181A2299A43BA00FE0FAA /* SettingsViewController.storyboard */,
+				28D181A3299A43BA00FE0FAA /* SettingsViewController.swift */,
+				28EB36752A1BF8DC004CAE18 /* AnimateFigures.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		28D181AD299A470800FE0FAA /* VideoPopup */ = {
+			isa = PBXGroup;
+			children = (
+				28D181AE299A470800FE0FAA /* PopupViewController.xib */,
+				28D181AF299A470800FE0FAA /* PopupPlayerView.swift */,
+				28D181B0299A470800FE0FAA /* PopupViewController.swift */,
+				28D181B1299A470800FE0FAA /* SkipViewController.swift */,
+			);
+			path = VideoPopup;
+			sourceTree = "<group>";
+		};
+		28D181DF299B608100FE0FAA /* GifHandler */ = {
+			isa = PBXGroup;
+			children = (
+				28D181E0299B60BA00FE0FAA /* GifHandler.swift */,
+			);
+			path = GifHandler;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		28D1811B299A0E3B00FE0FAA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28D18131299A0E3B00FE0FAA /* watch2earn_applesdk.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		28D1811F299A0E3B00FE0FAA /* watch2earn-applesdk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28D18134299A0E3B00FE0FAA /* Build configuration list for PBXNativeTarget "watch2earn-applesdk" */;
+			buildPhases = (
+				28D1811B299A0E3B00FE0FAA /* Headers */,
+				28D1811C299A0E3B00FE0FAA /* Sources */,
+				28D1811D299A0E3B00FE0FAA /* Frameworks */,
+				28D1811E299A0E3B00FE0FAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "watch2earn-applesdk";
+			productName = "watch2earn-applesdk";
+			productReference = 28D18120299A0E3B00FE0FAA /* watch2earn_applesdk.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		28D18129299A0E3B00FE0FAA /* watch2earn-applesdkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28D18137299A0E3B00FE0FAA /* Build configuration list for PBXNativeTarget "watch2earn-applesdkTests" */;
+			buildPhases = (
+				28D18126299A0E3B00FE0FAA /* Sources */,
+				28D18127299A0E3B00FE0FAA /* Frameworks */,
+				28D18128299A0E3B00FE0FAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28D1812D299A0E3B00FE0FAA /* PBXTargetDependency */,
+			);
+			name = "watch2earn-applesdkTests";
+			productName = "watch2earn-applesdkTests";
+			productReference = 28D1812A299A0E3B00FE0FAA /* watch2earn-applesdkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28D18117299A0E3B00FE0FAA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					28317D4429C2ECC4006D33B2 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					28D1811F299A0E3B00FE0FAA = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					28D18129299A0E3B00FE0FAA = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 28D1811A299A0E3B00FE0FAA /* Build configuration list for PBXProject "watch2earn-applesdk" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 28D18116299A0E3B00FE0FAA;
+			productRefGroup = 28D18121299A0E3B00FE0FAA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28D1811F299A0E3B00FE0FAA /* watch2earn-applesdk */,
+				28D18129299A0E3B00FE0FAA /* watch2earn-applesdkTests */,
+				28317D4429C2ECC4006D33B2 /* watch2earn-universal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28D1811E299A0E3B00FE0FAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				284EEBEE2A1BAC58006B7B15 /* data-reveal.mp3 in Resources */,
+				28D18179299A15A200FE0FAA /* ProximaNova-Bold.otf in Resources */,
+				28D181A4299A43BA00FE0FAA /* SettingsViewController.storyboard in Resources */,
+				28EB392C2A1E23E3004CAE18 /* loose_sound.mp3 in Resources */,
+				28D1817B299A15A200FE0FAA /* ProximaNova-Regular.otf in Resources */,
+				28C9F2DF2A261B2100C03068 /* side_ad_banner.png in Resources */,
+				28D1815F299A143B00FE0FAA /* PlayerOverlayViews.xib in Resources */,
+				28D1817E299A15A200FE0FAA /* earnify.png in Resources */,
+				28D1817A299A15A200FE0FAA /* ProximaNova-Extrabold.otf in Resources */,
+				28D1817C299A15A200FE0FAA /* eatAnimated.gif in Resources */,
+				28D1818B299A162500FE0FAA /* logo_big.png in Resources */,
+				28D18185299A15A200FE0FAA /* eat.png in Resources */,
+				284EEB0E2A137DC0006B7B15 /* ResolveViewController.xib in Resources */,
+				284EE9DA2A123279006B7B15 /* PollViewController.xib in Resources */,
+				28D18178299A15A200FE0FAA /* ProximaNova-Thin.otf in Resources */,
+				288CA3212A09695E00EED345 /* GamificationViewController.xib in Resources */,
+				284EEBEF2A1BAC58006B7B15 /* success.mp3 in Resources */,
+				284EEAD62A1360F9006B7B15 /* WagerViewController.xib in Resources */,
+				28D18188299A15A200FE0FAA /* image.png in Resources */,
+				28D181B2299A470800FE0FAA /* PopupViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28D18128299A0E3B00FE0FAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28317D4829C2ECCA006D33B2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"project\"\n#open \"${PROJECT_DIR}\"\nif [ \"true\" == ${ALREADYINVOKED:-false} ]\nthen\necho \"RECURSION: Detect, stopping\"\nelse\nexport ALREADYINVOKED=\"true\"\n\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-appletvuniversal\nFRAMEWORK_NAME=\"watch2earn_applesdk\"\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# STEP 1. Build Device and Simulator versions\necho \"appletvos\"\nxcodebuild -target \"${TARGET_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk appletvos BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" build\necho \"appletvsim\"\nxcodebuild -target \"${TARGET_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk appletvsimulator BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" build\n\n# Step 2. Copy the framework structure (from appletvos build) to the universal folder\necho \"universal\"\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-appletvos/${FRAMEWORK_NAME}.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\n# Step 3. copy swift modules from appletvsimulator build (if it exists) to the copied framework directory\necho \"apple simulator path\"\nSIMULATOR_SWIFT_MODULES_DIR=\"${BUILD_DIR}/${CONFIGURATION}-appletvsimulator/${FRAMEWORK_NAME}.framework/Modules/${FRAMEWORK_NAME}.swiftmodule/.\"\nif [ -d \"${SIMULATOR_SWIFT_MODULES_DIR}\"];\nthen \ncp -R \"${SIMULATOR_SWIFT_MODULES_DIR}\" \"${UNIVERSAL_OUTPUTFOLDER}/${FRAMEWORK_NAME}.framework/Modules/${FRAMEWORK_NAME}.swiftmodule\"\nfi\n# Step 4. Create universal binary file using lipo and place the combined executable in the copied framework directory\necho \"lipo create\"\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\"  \"${BUILD_DIR}/${CONFIGURATION}-appletvsimulator/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\"  \"${BUILD_DIR}/${CONFIGURATION}-appletvos/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\"\necho \"end\"\n\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28D1811C299A0E3B00FE0FAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28D181E1299B60BA00FE0FAA /* GifHandler.swift in Sources */,
+				284EE9D92A123279006B7B15 /* PollViewController.swift in Sources */,
+				28D1815D299A143B00FE0FAA /* MessagesHandler.swift in Sources */,
+				28D181B3299A470800FE0FAA /* PopupPlayerView.swift in Sources */,
+				28D18154299A143B00FE0FAA /* RemoteSocketService.swift in Sources */,
+				28D18157299A143B00FE0FAA /* W2EWebSocket.swift in Sources */,
+				282B08652A027E4C001E0CB4 /* GamificationSocket.swift in Sources */,
+				28D181B7299A481800FE0FAA /* W2EManager.swift in Sources */,
+				28D18155299A143B00FE0FAA /* QRcodeGenerator.swift in Sources */,
+				28D181B4299A470800FE0FAA /* PopupViewController.swift in Sources */,
+				28D181B5299A470800FE0FAA /* SkipViewController.swift in Sources */,
+				28D18160299A143B00FE0FAA /* PlayerOverlayView.swift in Sources */,
+				28D18161299A143B00FE0FAA /* StakingDataStore.swift in Sources */,
+				28EB36762A1BF8DC004CAE18 /* AnimateFigures.swift in Sources */,
+				2860425A2A56DD4800BCD015 /* Reachability.swift in Sources */,
+				28D1815A299A143B00FE0FAA /* EarnifySDK.swift in Sources */,
+				28D181A5299A43BA00FE0FAA /* SettingsViewController.swift in Sources */,
+				284EEB0D2A137DC0006B7B15 /* ResolveViewController.swift in Sources */,
+				28D18125299A0E3B00FE0FAA /* watch2earn_applesdk.docc in Sources */,
+				28D1815E299A143B00FE0FAA /* TickersClient.swift in Sources */,
+				28D1815B299A143B00FE0FAA /* CacheStorage.swift in Sources */,
+				28D18158299A143B00FE0FAA /* W2EDataStore.swift in Sources */,
+				284EEAD52A1360F9006B7B15 /* WagerViewController.swift in Sources */,
+				28D18156299A143B00FE0FAA /* RemoteMessages.swift in Sources */,
+				28D18162299A143B00FE0FAA /* StakingClient.swift in Sources */,
+				28D18159299A143B00FE0FAA /* WalletHandler.swift in Sources */,
+				288CA3102A0948F500EED345 /* GamificationViewController.swift in Sources */,
+				28D1815C299A143B00FE0FAA /* ChannelHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28D18126299A0E3B00FE0FAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28D18130299A0E3B00FE0FAA /* watch2earn_applesdkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		28D1812D299A0E3B00FE0FAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28D1811F299A0E3B00FE0FAA /* watch2earn-applesdk */;
+			targetProxy = 28D1812C299A0E3B00FE0FAA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		28317D4629C2ECC4006D33B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6MR88HA5T8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		28317D4729C2ECC4006D33B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6MR88HA5T8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		28D18132299A0E3B00FE0FAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DRIVERKIT_DEPLOYMENT_TARGET = 20.0;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 14.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		28D18133299A0E3B00FE0FAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DRIVERKIT_DEPLOYMENT_TARGET = 20.0;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = appletvos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TVOS_DEPLOYMENT_TARGET = 14.0;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		28D18135299A0E3B00FE0FAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6MR88HA5T8;
+				DRIVERKIT_DEPLOYMENT_TARGET = 20.0;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edgevideo.com.watch2earn-applesdk";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,3";
+				TVOS_DEPLOYMENT_TARGET = 14.0;
+			};
+			name = Debug;
+		};
+		28D18136299A0E3B00FE0FAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6MR88HA5T8;
+				DRIVERKIT_DEPLOYMENT_TARGET = 20.0;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edgevideo.com.watch2earn-applesdk";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,3";
+				TVOS_DEPLOYMENT_TARGET = 14.0;
+			};
+			name = Release;
+		};
+		28D18138299A0E3B00FE0FAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6MR88HA5T8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edgevideo.com.watch2earn-applesdkTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		28D18139299A0E3B00FE0FAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6MR88HA5T8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edgevideo.com.watch2earn-applesdkTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28317D4529C2ECC4006D33B2 /* Build configuration list for PBXAggregateTarget "watch2earn-universal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28317D4629C2ECC4006D33B2 /* Debug */,
+				28317D4729C2ECC4006D33B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28D1811A299A0E3B00FE0FAA /* Build configuration list for PBXProject "watch2earn-applesdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28D18132299A0E3B00FE0FAA /* Debug */,
+				28D18133299A0E3B00FE0FAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28D18134299A0E3B00FE0FAA /* Build configuration list for PBXNativeTarget "watch2earn-applesdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28D18135299A0E3B00FE0FAA /* Debug */,
+				28D18136299A0E3B00FE0FAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28D18137299A0E3B00FE0FAA /* Build configuration list for PBXNativeTarget "watch2earn-applesdkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28D18138299A0E3B00FE0FAA /* Debug */,
+				28D18139299A0E3B00FE0FAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 28D18117299A0E3B00FE0FAA /* Project object */;
+}
