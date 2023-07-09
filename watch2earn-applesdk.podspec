@@ -89,7 +89,9 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
    spec.swift_versions = "5.0"
-   spec.source_files  = "watch2earn-applesdk/**/*.swift"
+   spec.source_files  = ["watch2earn-applesdk/*.swift",
+                         "watch2earn-applesdk/**/*.swift"
+                                                           ]
   # spec.exclude_files = "Classes/Exclude"
 
     spec.public_header_files = "watch2earn-applesdk/*.h"
